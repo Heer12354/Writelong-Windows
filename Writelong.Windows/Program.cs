@@ -13,11 +13,11 @@ public static class Program
             AppContext.BaseDirectory);
         WinRT.ComWrappersSupport.InitializeComWrappers();
 
-        Application.Start(_ =>
+        Application.Start(initializationParams =>
         {
             var context = new DispatcherQueueSynchronizationContext(DispatcherQueue.GetForCurrentThread());
             SynchronizationContext.SetSynchronizationContext(context);
-            _ = new App();
+            new App();
         });
     }
 }
