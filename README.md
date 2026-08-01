@@ -19,6 +19,10 @@ For a hosted Windows build, push the project to GitHub and run the **Build Write
 
 The project targets Windows 11 build 22000 or newer and uses WinUI 3 through the Windows App SDK.
 
+## Releases
+
+Create public releases manually from the **Build and Release Windows App** GitHub Action. Enter the next version without the `v` prefix: `1.1`, then `1.2`, and so on. This creates releases named `v1.1`, `v1.2`, and so forth.
+
 ## Current foundation
 
 The first scaffold includes the WinUI app shell, local JSON-backed settings, the appearance chooser, and contracts for UI Automation context capture, local inference, and the completion overlay. The next implementation phase wires these contracts to Windows APIs and a local ONNX model runtime.
